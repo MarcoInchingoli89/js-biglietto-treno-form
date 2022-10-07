@@ -7,6 +7,8 @@ La risposta finale (o output) sarà anch’essa da scrivere in console. */
 
 /* Costanti */
 
+// Nome del passeggero
+const userName = document.getElementById("userName").value;
 // Chilometri percorsi
 const kmTraveled = document.getElementById("km").value;
 // Età del passeggero
@@ -26,7 +28,8 @@ const priceGenerator = document.querySelector('button');
 priceGenerator.addEventListener('click', function() {
 
     console.log('Ho cliccato sul pulsante');
-    console.log('Chilometri percorsi:', kmTraveled);
+    console.log('Nome e Cognome:', userName);
+    console.log('Chilometri percorsi:', `${kmTraveled} km`);
     console.log('Età del passeggero:', passengerAge);
     // Se il passeggero ha meno di 18 anni applica il 20% di sconto
     if (passengerAge < 18) {
@@ -42,11 +45,6 @@ priceGenerator.addEventListener('click', function() {
     }
 
 })
-
-
-
-
-
 
 /* Milestone 2 */
 
