@@ -19,10 +19,10 @@ priceGenerator.addEventListener('click', function() {
     console.log('Nome e Cognome:', userName);
     document.getElementById("passenger_name").innerHTML = userName;
     // Chilometri che si vuole percorrere
-    const kmTraveled = document.getElementById("km").value;
+    const kmTraveled = Number(document.getElementById("km").value);
     console.log('Chilometri percorsi:', `${kmTraveled} km`);
     // Età del passeggero
-    const passengerAge = document.getElementById("age").value;
+    const passengerAge = Number(document.getElementById("age").value);
     console.log('Età del passeggero:', passengerAge);
     // Se il passeggero ha meno di 18 anni applica il 20% di sconto
     if (passengerAge < 18) {
